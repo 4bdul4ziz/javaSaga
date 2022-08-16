@@ -4,11 +4,11 @@ have a constructor that initializes the three instance variables. Provide a set 
 Employee's yearly salary again.
  */
 
-public class Employee {
+public class Employees {
     private String firstName;
     private String lastName;
     private double monthlySalary;
-    public Employee(String firstName, String lastName, double monthlySalary) {
+    public Employees(String firstName, String lastName, double monthlySalary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.monthlySalary = monthlySalary;
