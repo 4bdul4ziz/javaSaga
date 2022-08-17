@@ -21,7 +21,8 @@ public class RailwayReservation20BRS1185 {
     private String destination;
     private double ticketFare;
     
-    public RailwayReservation20BRS1185(String passengerName, int age, int seatNo, int trainNo, boolean freedomFighter, String source, String destination) {
+    public RailwayReservation20BRS1185(String passengerName, int age, int seatNo, int trainNo, boolean freedomFighter,
+            String source, String destination) {
         this.passengerName = passengerName;
         this.age = age;
         this.seatNo = seatNo;
@@ -35,6 +36,8 @@ public class RailwayReservation20BRS1185 {
         }
     }
     
+
+
     public RailwayReservation20BRS1185(String passengerName, int age, int seatNo, int trainNo, String source, String destination) {
         this.passengerName = passengerName;
         this.age = age;
