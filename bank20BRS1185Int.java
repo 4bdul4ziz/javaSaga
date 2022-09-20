@@ -7,9 +7,8 @@ interface bank20BRS1185Int {
     public void getCustomerDetails();
 
     public void checkPreviligeCustomer(int a, int y);
-    
-
 }
+
 
 class Bank1 implements bank20BRS1185Int {
     int accountNumber;
@@ -43,7 +42,6 @@ class Bank1 implements bank20BRS1185Int {
             System.out.println("Privilige Customer: No");
         }
     }
-
 }
 
 class Bank2 implements bank20BRS1185Int {
