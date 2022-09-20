@@ -8,32 +8,35 @@ public class PaintCostFinder20BRS1185 {
     //import scanner
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the length of the room: ");
-        double length = input.nextDouble();
-        System.out.print("Enter the width of the room: ");
-        double width = input.nextDouble();
-        System.out.print("Enter the height of the room: ");
-        double height = input.nextDouble();
-        double wallArea = wallArea(length, width, height);
-        double gallons = gallons(wallArea);
-        double price = price(gallons);
-        System.out.println("The number of gallons needed is " + gallons);
-        System.out.println("The price is $" + price);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("Enter the length of the room: ");
+            double length = input.nextDouble();
+            System.out.print("Enter the width of the room: ");
+            double width = input.nextDouble();
+            System.out.print("Enter the height of the room: ");
+            double height = input.nextDouble();
+            double wallArea = wallArea(length, width, height);
+            double gallons = gallons(wallArea);
+            double price = price(gallons);
+            System.out.println("The number of gallons needed is " + gallons);
+            System.out.println("The price is $" + price);
+        }
     }
-    
+
     public static double wallArea(double length, double width, double height) {
         double wallArea = 2 * (length * height + width * height);
         return wallArea;
     }
-    
+
     public static double gallons(double wallArea) {
         double gallons = wallArea / 300;
         return gallons;
     }
-    
+
     public static double price(double gallons) {
         double price = gallons * 30;
         return price;
-    }  
+    }
 }
+
+
