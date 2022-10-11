@@ -1,0 +1,2 @@
+This is a test text file with some text inside it used for input purposes. This is a second line. How's your day today?
+Jam is good, but butter is better. I like Jam!
